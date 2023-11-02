@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Todo List</title>
+</head>
+<body class="">
+    <header class="border-b-4 bg-blue-900 text-white w-full text-center py-4 max-w-auto">
+        <h1 class="text-3xl">Todo List</h1>
+    </header>
+    <section class="bg-white text-center items-center justify-center">
+        <div class="flex gap-3 text-center items-center justify-center">
+          <input type="text" id="todo-input" placeholder="Add a todo ..." class="mt-5 border border-l p-6 w-[53%] rounded-md"> 
+          <button type="button" onclick="createTodo()" class="bg-blue-900 p-6 w-[80px] text-white mt-5 text-2xl rounded-md hover:bg-green-800">+</button></div>
+    </section>
+     <span  id="Form-message" class="hidden text-red-600 text-center text-xs"></span>
+    <section class="w-[60%] bg-blue-900 border-b-4 rounded-md mx-auto border-2 p-6 m-10 text-center items-center justify-center rounded-md" id="todo-list-container">
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>
